@@ -2,7 +2,7 @@ Spring-128
 
 Spring-128 Compression lossless
 
-paq and Spring-128
+Spring-128
 
 Algorithm Spring-128:
 
