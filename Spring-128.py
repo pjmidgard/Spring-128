@@ -855,7 +855,7 @@ class compression:
                                                                     
                                     size_data3=add_bits118+size_data3
 
-                                    if limit==1:
+                                    if Limit==1:
                                         size_data3=size_data12
                                     else:
                                         size_data3=size_data3
