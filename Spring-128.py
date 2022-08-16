@@ -116,7 +116,7 @@ class compression:
                         Limit_size_of_file=0
                        
                         lenf1=len(data)
-                        if lenf1<=335871:
+                        if lenf1<=7340032:
                             Limit_size_of_file=1
                             
                         lenf5=len(data)
