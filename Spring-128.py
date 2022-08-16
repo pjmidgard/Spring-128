@@ -60,7 +60,7 @@ class compression:
                     name_bofore=len(nameas)
                     
                     
-                    if nemeas[:name_bofore-(name_cut*2)]==".Spring-128.Spring-128":
+                    if nameas[name_bofore-name_cut:]==".Spring-128":
                         print("Sorry you can't compression then one times!")
                         raise SystemExit
                     
