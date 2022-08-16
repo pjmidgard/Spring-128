@@ -102,9 +102,12 @@ class compression:
                   
                         s=str(data)
                         
-                     
+                        Limit_size_of_file=0
                        
                         lenf1=len(data)
+                        if lenf1<=335871:
+                            Limit_size_of_file=1
+                            
                         lenf5=len(data)
                         
                         assx=0
@@ -385,7 +388,13 @@ class compression:
                                     size_data11=add_bits118+size_data11
                                     
                                     
-                                  
+                                    if Limit_size_of_file==1:
+                                        size_data11="00000000"+size_data_not_compress
+
+                                    else:
+                                        size_data11="11111111"+size_data11
+                                        
+                                        
                                 
                                     
                                  
@@ -589,7 +598,19 @@ class compression:
                                 x4=1
                                 if x4==1:
 
+                                    
+
                                     size_data3=size_data2
+
+                                    Limit=0
+
+                                    if size_data3[0:8]="00000000":
+                                        size_data12=size_data3[8:]
+                                        Limit=1
+
+                                    elif size_data3[0:8]="11111111":
+                                        size_data3=size_data3[8:]
+                                       
                                     if size_data3[0:9]=="000000001":
                                         size_data3=size_data3[9:]
                                     elif size_data3[0:8]=="00000001":
@@ -833,6 +854,12 @@ class compression:
                                                                     
                                                                     
                                     size_data3=add_bits118+size_data3
+
+                                    if limit==1:
+                                        size_data3=size_data12
+                                    else:
+                                        size_data3=size_data3
+                                        
                                       
                                     n = int(size_data3, 2)
                                     
