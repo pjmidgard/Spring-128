@@ -53,8 +53,19 @@ class compression:
                     Deep_long_All=Deep_long*16
                     block_size_long=16
                     Times_compression=1
-                    	
-                    nameas=name+".bin"
+                    
+                    name_cut=len(".Spring-128")
+                    
+                    nameas=name+".Spring-128"
+                    name_bofore=len(nameas)
+                    
+                    
+                    if nemeas[:name_bofore-(name_cut*2)]==".Spring-128.Spring-128":
+                        print("Sorry you can't compression then one times!")
+                        raise SystemExit
+                    
+                    
+                    
                 
                     nac=len(nameas)
                     
@@ -456,12 +467,12 @@ class compression:
                     nameas=name
                     nac=len(nameas)
                     name_cut=""
-                    name_cut=len(".bin")
+                    name_cut=len(".Spring-128")
                     nameas=name
                     
                     name_long=len(nameas)
                     nameSS=name[name_long-name_cut:]
-                    if nameSS!=".bin":
+                    if nameSS!=".Spring-128":
                         x3=0.0
                         return print(x3)
                         
