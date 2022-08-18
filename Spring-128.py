@@ -49,7 +49,7 @@ class compression:
                     
                    
                     
-                    Deep_long=12000
+                    Deep_long=99999999999999
                     Deep_long_All=Deep_long*16
                     block_size_long=16
                     Times_compression=1
@@ -508,7 +508,7 @@ class compression:
                     
                     
                     
-                    Deep_long=12000
+                    Deep_long=99999999999999
                     Deep_long_All=Deep_long*16
                     block_size_long=16
                     Times_compression=1
