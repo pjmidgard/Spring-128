@@ -127,6 +127,8 @@ class compression:
                         elif lenf1<=335872:
                             Limit_size_of_file=1
                             
+                        #print(Limit_size_of_file)
+                            
                         lenf5=len(data)
                         
                         assx=0
