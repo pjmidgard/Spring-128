@@ -64,13 +64,13 @@ class compression:
                     name_cut2=len(".paq8o.Spring-128")
                     name_cut1=len(".bin.Spring-128")
                     
-                    if nameas[name_bofore-(name_cut*2):]==".Spring-128.Spring-128" or nameas[name_bofore-(name_cut1):]!=".bin.Spring-128" or nameas[name_bofore-(name_cut2):]!=".paq8o.Spring-128":
-                        print("Sorry you can't compression then one times and just random files.")
-                        raise SystemExit
+                    if nameas[name_bofore-(name_cut*2):]==".Spring-128.Spring-128" or nameas[name_bofore-(name_cut1):]==".bin.Spring-128" or nameas[name_bofore-(name_cut2):]!=".paq.Spring-128":
+                        
+                    	print("Right format.")
                     
-                    
-                    
-                
+                       
+                    else:
+                    	 raise SystemExit
                     nac=len(nameas)
                     
                     countraz=0
