@@ -118,13 +118,8 @@ class compression:
                         lenf1=len(data)
                         Divide=lenf1%2
                         File_size_Divide=0
-                        if lenf1>335872 and Divide==0:
-                            Limit_size_of_file=0
-                            File_size_Divide=0
-                        elif lenf1>335872 and Divide!=0:
-                            Limit_size_of_file=0
-                            File_size_Divide=1    
-                        elif lenf1<=335872:
+                        
+                        if lenf1<=335872 or Divide!=0:
                             Limit_size_of_file=1
                             
   
