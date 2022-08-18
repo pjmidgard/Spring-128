@@ -60,7 +60,11 @@ class compression:
                     name_bofore=len(nameas)
                     
                     
-                    if nameas[name_bofore-(name_cut*2):]==".Spring-128.Spring-128":
+                    
+                    
+                    name_cut1=len(".bin")
+                    
+                    if nameas[name_bofore-(name_cut*2):]==".Spring-128.Spring-128" or nameas[name_bofore-(name_cut1):]==".bin":
                         print("Sorry you can't compression then one times!")
                         raise SystemExit
                     
@@ -118,9 +122,13 @@ class compression:
                         lenf1=len(data)
                         Divide=lenf1%2
                         File_size_Divide=0
+                        if Divide==0:
+                            Limit_size_of_file=0
+                            File_size_Divide=0
+                        elif Divide!=0:
+                            Limit_size_of_file=0
+                            File_size_Divide=1    
                         
-                        if lenf1<=335872 or Divide!=0:
-                            Limit_size_of_file=1
                             
   
                             
