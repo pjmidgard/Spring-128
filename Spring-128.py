@@ -641,7 +641,7 @@ class compression:
                                         size_data3=size_data3[8:]
                                     elif size_data3[0:8]=="11111110":
                                         size_data3=size_data3[8:]
-                                        long5=(size_data3)
+                                        long5=len(size_data3)
                                         File_size_divide=1
                                         size_data14=size_data3[long5-8:]
                                         size_data3=size_data3[:long5-8]
