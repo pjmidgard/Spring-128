@@ -51,7 +51,7 @@ class compression:
                     
                     Deep_long=12000
                     Deep_long_All=Deep_long*16
-                    block_size_long=64
+                    block_size_long=16
                     Times_compression=1
                     
                     name_cut=len(".Spring-128")
@@ -510,7 +510,7 @@ class compression:
                     
                     Deep_long=12000
                     Deep_long_All=Deep_long*16
-                    block_size_long=64
+                    block_size_long=16
                     Times_compression=1
                     	
                     
