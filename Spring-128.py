@@ -61,10 +61,10 @@ class compression:
                     
                     
                     
-                    name_cut2=len(".paq8o.Spring-128")
+                    name_cut2=len(".paq")
                     name_cut1=len(".bin.Spring-128")
                     
-                    if nameas[name_bofore-(name_cut1):]==".bin.Spring-128" or nameas[name_bofore-(name_cut2):]==".paq8o.Spring-128":
+                    if nameas[name_bofore-(name_cut1):]==".bin.Spring-128" or name[name_bofore-(name_cut2):]==".paq":
                         
                     	print("Right format.")
                     
