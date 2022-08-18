@@ -62,9 +62,9 @@ class compression:
                     
                     
                     
-                    name_cut1=len(".bin")
+                    name_cut1=len(".Spring-128.bin")
                     
-                    if nameas[name_bofore-(name_cut*2):]==".Spring-128.Spring-128" or nameas[name_bofore-(name_cut1):]!=".bin":
+                    if nameas[name_bofore-(name_cut*2):]==".Spring-128.Spring-128" or nameas[name_bofore-(name_cut1):]!=".Spring-128.bin":
                         print("Sorry you can't compression then one times and just random files.")
                         raise SystemExit
                     
