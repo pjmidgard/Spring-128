@@ -7,4 +7,5 @@ Spring-128
 Algorithm Spring-128:
 
 Compression zeros. Long_zeros_max-1+info1+info2 and predict 1 and 0.
+
 This program can compress random files but file should be certain size.
