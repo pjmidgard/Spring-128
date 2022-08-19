@@ -49,7 +49,7 @@ class compression:
                     
                    
                     
-                    Deep_long=99999999999999
+                    Deep_long=12000
                     Deep_long_All=Deep_long*16
                     block_size_long=16
                     Times_compression=1
@@ -123,13 +123,16 @@ class compression:
                         lenf1=len(data)
                         Divide=lenf1%2
                         File_size_Divide=0
-                        if Divide==0:
+                        if lenf1<=336000:
+                            Limit_size_of_file=1
+                        
+                        elif lenf1>336000 and Divide==0:
                             Limit_size_of_file=0
                             File_size_Divide=0
-                        elif Divide!=0:
+                        elif lenf1>336000 and Divide!=0:
                             Limit_size_of_file=0
                             File_size_Divide=1    
-                        
+                    
                             
   
                             
@@ -508,7 +511,7 @@ class compression:
                     
                     
                     
-                    Deep_long=99999999999999
+                    Deep_long=12000
                     Deep_long_All=Deep_long*16
                     block_size_long=16
                     Times_compression=1
