@@ -58,20 +58,20 @@ class compression:
                     
                     nameas=name+".Spring-128"
                     name_bofore=len(nameas)
-                    
+                    F=0
                     
                     
                     name_cut2=len(".paq8o.Spring-128")
                     name_cut1=len(".bin.Spring-128")
                     
-                    if nameas[name_bofore-(name_cut*2):]!=".Spring-128.Spring-128":
+                    if nameas[name_bofore-(name_cut1):]==".bin.Spring-128":
                         
-                    	print("Right format.")
+                    	F=0
                     
                        
                     else:
-                    	 print("wrong format.")
-                    	 raise SystemExit
+                    	 F=1
+                    	 
                     nac=len(nameas)
                     
                     countraz=0
@@ -123,7 +123,7 @@ class compression:
                         lenf1=len(data)
                         Divide=lenf1%2
                         File_size_Divide=0
-                        if lenf1<=336000:
+                        if lenf1<=336000 or F==1:
                             Limit_size_of_file=1
                         
                         elif lenf1>336000 and Divide==0:
