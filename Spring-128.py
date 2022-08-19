@@ -64,7 +64,7 @@ class compression:
                     name_cut2=len(".paq8o.Spring-128")
                     name_cut1=len(".bin.Spring-128")
                     
-                    if nameas[name_bofore-(name_cut1):]==".bin.Spring-128":
+                    if nameas[name_bofore-(name_cut*2):]!=".Spring-128.Spring-128":
                         
                     	print("Right format.")
                     
@@ -348,7 +348,7 @@ class compression:
                                                                                     size_data4=Zeroes
 
                                                                                 elif size_of_block<=size_after_block+1 and Times6<=Deep_long and size_of_block==long_block and Zeroes[0:2]=="10":
-                                                                                    size_data4="0"+Zeroes[0:1]+Zeroes[2:]
+                                                                                    size_data4="0"+"1"+Zeroes[2:]
                                                                                     
                                                                                 elif size_of_block<=size_after_block+1 and Times6<=Deep_long and size_of_block==long_block and Zeroes[0:2]=="01":
                                                                                     size_data4="0"+Zeroes[0:1]+Zeroes[2:]  
@@ -773,7 +773,7 @@ class compression:
                                                                                     
                                                                                 elif Zeroes=="01" and size_after2==long_block and Times6<=Deep_long:
                                                                                     block=block+1
-                                                                                    Zeroes3=size_data3[block:block+1]+"0"+size_data3[block+1:block+(blocks-1)]
+                                                                                    Zeroes3="1"+"0"+size_data3[block+1:block+(blocks-1)]
                                                                                     size_after3=len(Zeroes3)
                                                                                     size_data4=Zeroes3
                                                                                     
@@ -781,7 +781,7 @@ class compression:
                                                                                     
                                                                                 elif Zeroes=="00" and size_after2==long_block and Times6<=Deep_long:
                                                                                     block=block+1
-                                                                                    Zeroes3=size_data3[block:block+1]+"1"+size_data3[block+1:block+(blocks-1)]
+                                                                                    Zeroes3="0"+"1"+size_data3[block+1:block+(blocks-1)]
                                                                                     size_after3=len(Zeroes3)
                                                                                     size_data4=Zeroes3
                                                                                     
