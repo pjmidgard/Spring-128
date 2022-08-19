@@ -49,7 +49,7 @@ class compression:
                     
                    
                     
-                    Deep_long=12000
+                    Deep_long=9999999999999999
                     Deep_long_All=Deep_long*16
                     block_size_long=16
                     Times_compression=1
@@ -64,7 +64,7 @@ class compression:
                     name_cut2=len(".paq8o.Spring-128")
                     name_cut1=len(".bin.Spring-128")
                     
-                    if nameas[name_bofore-(name_cut1):]==".bin.Spring-128" or nameas[name_bofore-(name_cut2):]==".paq8o.Spring-128":
+                    if nameas[name_bofore-(name_cut1):]==".bin.Spring-128":
                         
                     	print("Right format.")
                     
@@ -511,7 +511,7 @@ class compression:
                     
                     
                     
-                    Deep_long=12000
+                    Deep_long=9999999999999999
                     Deep_long_All=Deep_long*16
                     block_size_long=16
                     Times_compression=1
